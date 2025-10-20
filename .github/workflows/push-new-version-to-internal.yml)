@@ -1,3 +1,5 @@
+name: Deploy to Google Play
+
 on:
   workflow_dispatch:
 
@@ -14,7 +16,7 @@ jobs:
         run: |
           mkdir -p build_output
           gh release download 2.0.0 \
-            --pattern "com.retometcep.iretilsopers_2.aab" \
+            --pattern "com.beargrizsl.ibershfor_2.aab" \
             --dir build_output
 
       - name: Setup Ruby
