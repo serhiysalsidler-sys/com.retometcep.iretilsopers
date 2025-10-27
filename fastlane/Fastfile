@@ -1,12 +1,12 @@
 platform :android do
-  desc "Upload AAB to Internal track"
-  lane :upload_to_internal do
+  desc "Upload AAB to Open testing track"
+  lane :upload_to_open do
     supply(
-      json_key_data: ENV["GOOGLE_PLAY_JSON_KEY"], # можно также указать путь к .json
+      json_key_data: ENV["GOOGLE_PLAY_JSON_KEY"],
       package_name: "com.retometcep.iretilsopers",
-      aab: "build_output/com.retometcep.iretilsopers_2.aab",
-      track: "internal",
-      release_status: "draft",
+      aab: "build_output/com.retometcep.iretilsopers_3.aab",
+      track: "beta", # ← вот так!
+      release_status: "completed",
       skip_upload_changelogs: false,
       skip_upload_images: true,
       skip_upload_screenshots: true,
