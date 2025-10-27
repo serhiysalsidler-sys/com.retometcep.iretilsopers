@@ -6,7 +6,7 @@ platform :android do
       package_name: "com.retometcep.iretilsopers",
       aab: "build_output/com.retometcep.iretilsopers_3.aab",
       track: "beta", # ← вот так!
-      release_status: "completed",
+      release_status: "draft",
       skip_upload_changelogs: false,
       skip_upload_images: true,
       skip_upload_screenshots: true,
